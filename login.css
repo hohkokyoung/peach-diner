@@ -1,0 +1,405 @@
+﻿@import url("https://fonts.googleapis.com/css?family=Dancing Script");
+@import url("https://fonts.googleapis.com/css?family=Bad Script");
+@import url("https://fonts.googleapis.com/css?family=Capriola");
+@import url("https://fonts.googleapis.com/css?family=Aldrich");
+
+body {
+    padding: 0;
+    background-image: url(img/login-chef.png);
+    background-size: cover;
+    margin-top: -1.2em;
+}
+
+.login-hero {
+    padding: 12em 0;
+    height: 150vh;
+    color: white;
+}
+
+@media (min-width:55rem) {
+    .login-hero {
+        padding: 4em 0;
+        height: 30em;
+    }
+}
+
+.login-hero-container {
+    position: relative;
+    width: 20em;
+    height: 26em;
+    background-color: rgba(255,255,255,0.5);
+    margin: 0 auto;
+    box-shadow: 2px 2px 50px black;
+    color: black;
+    text-align: center;
+    border-radius: 1em;
+}
+
+@media (min-width:55rem) {
+    .login-hero-container {
+        width: 30em;
+        height: 26em;
+    }
+}
+
+.login-hero-container h1 {
+    font-size: 4em;
+    margin-top: 1em;
+    padding-top: .3em;
+    margin-bottom: .2em;
+    font-family: 'Capriola', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px white;
+}
+
+.login-textbox {
+    width: 15em;
+    height: 3em;
+    background-color: #f1f1f1b3;
+    border-radius: 2em;
+    margin: 1em auto;
+    background-color: black;
+    color: white;
+}
+
+.login-textbox input {
+    background: none;
+    border: none;
+    outline: none;
+    text-align: center;
+    width: 40%;
+    line-height: 2.4em;
+    font-size: 1.2em;
+    font-family: 'Baumans', sans-serif;
+    color: white;
+    border-radius: 2em;
+}
+
+.login-textbox input:focus {
+    box-shadow: 0 0 50px 2px aqua;
+    width: 100%;
+    transition: .5s;
+    -webkit-transition: .5s;
+}
+
+.button-submit {
+    border-radius: 2em;
+    background: #3498db;
+    border: none;
+    outline: none;
+    text-align: center;
+    width: 50%;
+    line-height: 2.3em;
+    font-size: 1.3em;
+    font-family: 'Baumans', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    cursor: pointer;
+    display: block;
+    margin-top: 1em;
+}
+
+.button-submit:hover {
+    background: black;
+    box-shadow: 0 0 50px 1px gold;
+}
+
+.forgot-password {
+    text-decoration: none;
+    text-align: center;
+    margin: .5em auto;
+    color: black;
+    font-size: 1.3em;
+    display: block;
+    width: 60%;
+}
+
+.forgot-password:hover {
+    color: red;
+}
+
+.no-account {
+    text-decoration: none;
+    text-align: center;
+    margin: .7em auto;
+    color: black;
+    font-size: 1.3em;
+    display: block;
+    width: 60%;
+}
+
+.no-account:hover span {
+    display: none;
+}
+
+.no-account:hover {
+    opacity: .8;
+}
+
+.no-account:hover:before {
+    content: attr(data-hover);
+    margin: .7em auto;
+    border: 1px solid black;
+    padding-left: 1.9em;
+    padding-right: 2em;
+    text-align: center;
+    border-radius: 2em;
+    background-color: black;
+    color: aqua;
+    display: block;
+    opacity: 1;
+}
+
+
+@media (min-width:55rem) {
+    .login-textbox {
+        width: 20em;
+        height: 3em;
+    }
+    .forgot-password {
+        width: 40%;
+    }
+    .no-account {
+        width: 40%;
+    }
+}
+
+
+@media (min-width:55rem) {
+    .login-textbox input {
+        background: none;
+        border: none;
+        outline: none;
+    }
+}
+
+.error {
+    width: 80%;
+    margin: 2em auto;
+    padding: 1em;
+    border: 1px solid #a94442;
+    color: #a94442;
+    background: #f2dede;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 1.2em;
+    list-style-type: none;
+    padding-left: 0em;
+    font-family: 'Anaheim', sans-serif;
+
+}
+
+.error li {
+    list-style: none;
+}
+
+.error li:before {
+    content: '\2717';
+    margin-right: .3em;
+}
+
+@media (min-width:75rem) {
+    .error {
+        width: 20%;
+        margin-top: -8em;
+        margin-right: 5em;
+        padding-right: 2em;
+    }
+}
+
+.modal-forgot {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 10em; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-forgot-textbox {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 3em;
+    border: 1px solid #888;
+    width: 80%;
+    padding-top: 2em;
+    padding-bottom: 3em;
+}
+
+.modal-forgot-textbox h2 {
+    font-size: 2em;
+    font-family: 'Bad Script', sans-serif;
+    font-weight: 900;
+    margin: .5em auto;
+}
+
+.modal-randnum {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 10em; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-randnum-textbox {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 3em;
+    border: 1px solid #888;
+    width: 80%;
+    padding-top: 2em;
+    padding-bottom: 3em;
+}
+
+.modal-randnum-textbox h2 {
+    font-size: 2em;
+    font-family: 'Bad Script', sans-serif;
+    font-weight: 900;
+    margin: .5em auto;
+    margin-bottom: .2em;
+}
+
+/* The Close Button */
+.close3 {
+    color: #aaaaaa;
+    font-size: 2em;
+    font-weight: bold;
+    float: right;
+    margin-top: -.7em;
+}
+
+.close3:hover,
+.close3:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close4 {
+    color: #aaaaaa;
+    font-size: 2em;
+    font-weight: bold;
+    float: right;
+    margin-top: -.7em;
+}
+
+.close4:hover,
+.close4:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-forgot-textbox .modal-username-input {
+    margin: 1.5em auto;
+    padding: .5em 2em;
+    text-align: center;
+    border: none;
+    border: 1px gold solid;
+    margin-bottom: 2em;
+    margin-left: -1em;
+    margin-right: 1em;
+}
+
+.modal-forgot-textbox .modal-email-input {
+    margin: 1.5em auto;
+    padding: .5em 2em;
+    text-align: center;
+    border: none;
+    border: 1px gold solid;
+    margin-bottom: 2em;
+    margin-left: -1em;
+    margin-right: 1em;
+}
+
+.modal-randnum-textbox .modal-randnum-code {
+    margin: 1.5em auto;
+    padding: .5em 2em;
+    text-align: center;
+    border: none;
+    border: 1px gold solid;
+    margin-bottom: 2em;
+    margin-left: -1em;
+    margin-right: 1em;
+}
+
+.modal-forgot-textbox .modal-username-input:focus,
+.modal-forgot-textbox .modal-email-input:focus,
+.modal-randnum-textbox .modal-randnum-code:focus {
+    box-shadow: 0 4px 10px -2px gray;
+}
+
+.modal-button {
+    padding: .3em 2em;
+    margin: 1em 0em;
+    font-family: 'Cutive Mono', sans-serif;
+    font-size: 1.2em;
+}
+
+.modal-cancel {
+    background-color: lightgrey;
+    color: black;
+    cursor: pointer;
+}
+
+.modal-proceed {
+    background-color: gold;
+    color: black;
+    cursor: pointer;
+    border: none;
+}
+
+.modal-login {
+    background-color: gold;
+    color: black;
+    cursor: pointer;
+    border: none;
+}
+
+.modal-cancel:hover {
+    box-shadow: 0 0 15px black;
+}
+
+.modal-proceed:hover {
+    box-shadow: 0 0 15px black;
+}
+
+.modal-login:hover {
+    box-shadow: 0 0 15px black;
+}
+
+
+@media (min-width:55rem) {
+    .modal-forgot-textbox .modal-username-input {
+        margin-left: 1em;
+    }
+
+    .modal-forgot-textbox .modal-email-input {
+        margin-left: 1em;
+    }
+
+    .modal-randnum-textbox .modal-randnum-code {
+        margin-left: 1em;
+    }
+
+    .modal-button {
+        padding: .3em 2em;
+        margin: auto 2em;
+        font-family: 'Cutive Mono', sans-serif;
+        font-size: 1.2em;
+    }
+}

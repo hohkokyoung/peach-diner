@@ -1,0 +1,355 @@
+﻿@import url("https://fonts.googleapis.com/css?family=Italiana");
+@import url("https://fonts.googleapis.com/css?family=Dancing Script");
+
+/*ourchefs-hero
+    ==================================================================
+*/
+
+body {
+    background-image: url(img/restaurant1.png);
+    background-position: center;
+}
+
+.ourchefs-hero {
+    padding-top: 90%;
+    padding-bottom: 100vh;
+    color: white;
+    background-position: center;
+}
+
+@media (max-width:31rem) {
+    .ourchefs-hero {
+        height: 350vh;
+        padding-top: 30vh;
+        padding-bottom: 0vh;
+    }
+}
+
+@media (max-width:80rem) {
+    .ourchefs-hero {
+        height: 300vh;
+        padding-top: 30vh;
+        padding-bottom: 0vh;
+    }
+}
+
+@media (min-width:80rem) {
+    .ourchefs-hero {
+        height: 100vh;
+        padding-top: 30vh;
+        padding-bottom: 0vh;
+    }
+}
+
+/*card-chefs1
+    ================================================
+*/
+
+.card-chefs1 {
+    position: absolute;
+    top: 25em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 28em;
+    height: 17em;
+    transform-style: preserve-3d;
+    perspective: 50em;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+.card-chefs1 .chefs1-front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+.card-chefs1:hover .chefs1-front {
+    transform: rotateX(-180deg);
+}
+
+.card-chefs1 .chefs1-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    backface-visibility: hidden; 
+    transform: rotateX(180deg);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+.card-chefs1:hover .chefs1-back {
+    transform: rotateX(0deg);
+}
+
+.card-chefs1 .chefs1-front h2 {
+    font-family: 'Italiana', sans-serif;
+    font-size: 3em;
+    color: gold;
+    opacity: 0;
+    margin-top: .5em;
+}
+
+.card-chefs1 .chefs1-back .chefs1-back-details h2 {
+    font-family: 'Italiana', sans-serif;
+    font-size: 3em;
+    color: gold;
+}
+
+.card-chefs1 .chefs1-back .chefs1-back-details {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: .5em;
+}
+
+@media (max-width: 31rem) {
+    .card-chefs1 {
+        position: absolute;
+        top: 26em;
+        left: 50%;
+        width: 15em;
+        height: 20em;
+    }
+    .card-chefs1 .chefs1-front h2 {
+        opacity: 1;
+    }
+    .card-chefs1 .chefs1-back .chefs1-back-details {
+        font-size: .85em;
+    }
+}
+
+@media (min-width: 80rem) {
+    .card-chefs1 {
+        position: absolute;
+        top: 64%;
+        left: 20%;
+        width: 20em;
+        height: 25em;
+    }
+    .card-chefs1 .chefs1-front h2 {
+        opacity: 1;
+         margin-top: .5em;
+    }
+}
+
+/*card-chefs2
+    ================================================
+*/
+
+.card-chefs2 {
+    position: absolute;
+    top: 45em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 28em;
+    height: 17em;
+    transform-style: preserve-3d;
+    perspective: 50em;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+.card-chefs2 .chefs2-front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+.card-chefs2:hover .chefs2-front {
+    transform: rotateX(-180deg);
+}
+
+.card-chefs2 .chefs2-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    backface-visibility: hidden; 
+    transform: rotateX(180deg);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+.card-chefs2:hover .chefs2-back {
+    transform: rotateX(0deg);
+}
+
+.card-chefs2 .chefs2-front h2 {
+    font-family: 'Italiana', sans-serif;
+    font-size: 3em;
+    color: gold;
+    margin-left: 1em;
+    margin-right: 1em;
+    opacity: 0;
+    margin-top: .5em;
+}
+
+.card-chefs2 .chefs2-back .chefs2-back-details h2 {
+    font-family: 'Italiana', sans-serif;
+    font-size: 3em;
+    color: gold;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.card-chefs2 .chefs2-back .chefs2-back-details {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: .5em;
+}
+
+@media (max-width: 31rem) {
+    .card-chefs2 {
+        position: absolute;
+        top: 48em;
+        left: 50%;
+        width: 15em;
+        height: 20em;
+    }
+    .card-chefs2 .chefs2-front h2 {
+        opacity: 1;
+    }
+    .card-chefs2 .chefs2-back .chefs2-back-details {
+        font-size: .85em;
+    }
+}
+
+@media (min-width: 80rem) {
+    .card-chefs2 {
+        position: absolute;
+        top: 64%;
+        left: 50%;
+        width: 20em;
+        height: 25em;
+    }
+    .card-chefs2 .chefs2-front h2 {
+        opacity: 1;
+    }
+}
+
+/*card-chefs3
+    ================================================
+*/
+
+.card-chefs3 {
+    position: absolute;
+    top: 65em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 28em;
+    height: 17em;
+    transform-style: preserve-3d;
+    perspective: 50em;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+.card-chefs3 .chefs3-front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+.card-chefs3:hover .chefs3-front {
+    transform: rotateX(-180deg);
+}
+
+.card-chefs3 .chefs3-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    backface-visibility: hidden; 
+    transform: rotateX(180deg);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+.card-chefs3:hover .chefs3-back {
+    transform: rotateX(0deg);
+}
+
+.card-chefs3 .chefs3-front h2 {
+    font-family: 'Italiana', sans-serif;
+    font-size: 3em;
+    color: gold;
+    margin-left: .5em;
+    margin-right: .5em;
+    opacity: 0;
+    margin-top: .5em;
+}
+
+.card-chefs3 .chefs3-back .chefs3-back-details h2 {
+    font-family: 'Italiana', sans-serif;
+    font-size: 3em;
+    color: gold;
+}
+
+.card-chefs3 .chefs3-back .chefs3-back-details {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: .5em;
+}
+
+@media (max-width: 31rem) {
+    .card-chefs3 {
+        position: absolute;
+        top: 70em;
+        left: 50%;
+        width: 15em;
+        height: 20em;
+    }
+    .card-chefs3 .chefs3-front h2 {
+        opacity: 1;
+    }
+    .card-chefs3 .chefs3-back .chefs3-back-details {
+        font-size: .85em;
+    }
+}
+
+@media (min-width: 80rem) {
+    .card-chefs3 {
+        position: absolute;
+        top: 64%;
+        left: 80%;
+        width: 20em;
+        height: 25em;
+    }
+    .card-chefs3 .chefs3-front h2 {
+        opacity: 1;
+    }
+}

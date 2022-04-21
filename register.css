@@ -1,0 +1,230 @@
+﻿@import url("https://fonts.googleapis.com/css?family=Dancing Script");
+@import url("https://fonts.googleapis.com/css?family=Capriola");
+@import url("https://fonts.googleapis.com/css?family=Anaheim");
+
+body {
+    padding: 0;
+    background-image: url(img/restaurant-register1.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: -1em;
+}
+
+.register-hero {
+    padding: 12em 0;
+    height: 200vh;
+    color: white;
+}
+
+@media (min-width:50rem) {
+    .register-hero {
+        padding: 11em 0;
+        height: 105em;
+    }
+}
+
+.register-container {
+    position: relative;
+    width: 22em;
+    height: 90em;
+    background-color: rgba(255,255,255,0.5);
+    margin: 0 auto;
+    box-shadow: 2px 2px 50px black;
+    color: black;
+    text-align: center;
+    border-radius: .5em;
+}
+
+@media (min-width:50rem) {
+    .register-container {
+        width: 50em;
+        height: 88em;
+    }
+}
+
+.register-container h1 {
+    font-size: 3em;
+    padding-top: .5em;
+    text-shadow: 0px 0px 15px white;
+    font-family: 'Capriola', sans-serif;
+    margin-bottom: .5em;
+}
+
+.register-container h2 {
+    font-size: 1.2em;
+    color: black;
+    text-align: left;
+    margin-left: 3em;
+}
+
+.register-textbox {
+    width: 15em;
+    height: 3em;
+    background-color: #f1f1f1b3;
+    border-radius: .5em;
+    margin: 1em auto;
+    background-color: black;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.register-container input {
+    background: none;
+    border: none;
+    outline: none;
+    text-align: center;
+    width: 60%;
+    line-height: 2.4em;
+    font-size: 1.2em;
+    font-family: 'Baumans', sans-serif;
+    color: white;
+    border-radius: .5em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.register-container .register-date-of-birth {
+    width: 100%;
+    text-align: center;
+    padding-left: 3.2em;
+}
+
+.register-textbox input:focus {
+    box-shadow: 0 0 50px 2px aqua;
+    width: 100%;
+    transition: .5s;
+    -webkit-transition: .5s;
+}
+
+.register-container .button-submit {
+    border-radius: 2em;
+    background: gold;
+    border: none;
+    outline: none;
+    text-align: center;
+    width: 50%;
+    line-height: 2.3em;
+    font-size: 1.3em;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 1.2em;
+    cursor: pointer;
+    display: block;
+    margin-top: 1.2em;
+}
+
+.register-container .button-submit:hover {
+    background-color: black;
+    color: gold;
+    box-shadow: 0 0 50px 2px gold;
+}
+
+.register-container .register-checkbox-container {
+    width: 75%;
+    margin-top: 1.1em;
+    position: relative;
+    margin-left: 3em;
+}
+
+.register-container .register-checkbox-container .register-checkbox {
+    margin-right: 0;
+    padding: 0;
+    top: 0;
+    left: 0em;
+    height: 25px;
+    width: 30px;
+    position: absolute;
+}
+
+.register-container .register-checkbox-container span {
+    font-size: 1.1em;
+    margin-top: 0;
+    width: 0%;
+    left: 0;
+    margin-left: 2em;
+}
+
+.register-container .register-checkbox-container .register-news {
+    margin-left: .6em;
+}
+
+.button-privacy {
+    text-decoration: none;
+    color: aqua;
+}
+
+.button-privacy:hover {
+    text-decoration: underline;
+}
+
+.register-container .register-checkbox-container .register-terms {
+    margin-left: 2em;
+}
+
+@media (min-width:50rem) {
+    .register-textbox {
+        width: 30em;
+        height: 3em;
+    }
+    .register-container h1 {
+        font-size: 5em;
+        padding-top: .5em;
+        margin-top: 0.3em;
+    }
+    .register-container h2 {
+        margin-left: 8.5em;
+    }
+    .register-container .register-checkbox-container .register-checkbox {
+        left: 5em;
+    }
+    .register-container .register-checkbox-container .register-news {
+        margin-left: -6.09em;
+    }
+    .register-container .register-checkbox-container span {
+        left: 0;
+        margin-left: 0;
+    }
+    .register-container .register-checkbox-container {
+        width: 100%;
+        margin-left: 3.5em;
+    }
+    .register-container .button-submit {
+        width: 30%;
+    }
+    .register-container .register-checkbox-container .register-terms {
+        margin-left: .7em;
+    }
+}
+
+.error {
+    width: 80%;
+    margin: 2em auto;
+    padding: 1em;
+    border: 1px solid #a94442;
+    color: #a94442;
+    background: #f2dede;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 1.2em;
+    list-style-type: none;
+    padding-left: 0.5em;
+    font-family: 'Anaheim', sans-serif;
+}
+
+.error li {
+    list-style: none;
+}
+
+.error li:before {
+    content: '\2717';
+    margin-right: .3em;
+}
+
+@media (min-width:55rem) {
+    .error {
+        width: 50%;
+    }
+}

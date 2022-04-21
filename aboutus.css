@@ -1,0 +1,339 @@
+﻿@import url("https://fonts.googleapis.com/css?family=Italiana");
+@import url("https://fonts.googleapis.com/css?family=Dancing Script");
+
+
+/*aboutus-hero
+    ============================================================================
+*/
+
+.aboutus-hero {
+    background-image: url(img/chef1.png);
+    padding: 14em 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    background-position: center;
+    padding-top: 30vh;
+}
+
+@media (min-width: 80rem) {
+    .aboutus-hero {
+        height: 100vh;
+        padding-top: 15vh;
+    }
+}
+
+.aboutus-hero h1 {
+    color: aqua;
+}
+
+.aboutus-hero a {
+    margin: 1em;
+    display: inline-block;
+}
+
+.aboutus-hero p {
+    margin-bottom: 2em;
+    color: aqua;
+}
+
+.aboutus-hero span {
+    display: block;
+    padding-top: 1.2em;
+}
+
+@media (min-width:65rem) {
+    .aboutus-hero a {
+        margin: 2em;
+    }
+    .aboutus-hero p {
+        margin-bottom: 2em;
+    }
+}
+
+/*buttons
+    ===============================================================
+*/
+
+.button {
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    padding: .25em .5em;
+}
+
+.button-accent {
+    color: gold;
+}
+
+.button-accent:hover,
+.button-accent:focus {
+    background-color: gold;
+    color: black;
+    border-color: gold;
+}
+
+.button-our-history, .button-vision-mission, .button-call-us, .button-email-us {
+    font-family: 'Cutive Mono';
+    font-weight: 900;
+}
+
+@media (min-width: 55rem) {
+    .button {
+        font-size: 1.25rem;
+        padding: .25em 2.5em;
+    }
+}
+
+/*typography
+    ==============================================================
+*/
+
+.aboutus-title {
+    font-size: 5.5em;
+    font-family: 'Dancing Script', sans-serif;
+    font-weight: 500;
+}
+
+.aboutus-hero p {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.aboutus-our-history-textbox h2 {
+    font-weight: 900;
+}
+
+.aboutus-our-history-textbox p {
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+/*aboutus-textbox
+    ==================================================================
+*/
+
+.aboutus-our-history-textbox {
+    background-color: white;
+    color: black;
+    padding: 4em;
+    width: 100%;
+    outline: 2px solid black;
+    outline-offset: -2em;
+}
+
+.aboutus-our-history-textbox p {
+    color: black;
+}
+
+.aboutus-our-history-textbox h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Alex Brush', sans-serif;
+}
+
+/*aboutus-vision-textbox
+    ======================================================================
+*/
+
+.aboutus-vision-textbox {
+    background-color: black;
+    color: gold;
+    padding: 4em;
+    width: 100%;
+    outline: 3px solid gold;
+    outline-offset: -2em;
+}
+
+.aboutus-vision-textbox p {
+    color: gold;
+}
+
+.aboutus-vision-textbox h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Alex Brush', sans-serif;
+    font-weight: 700;
+}
+
+/*aboutus-mission-textbox
+    ======================================================================
+*/
+
+.aboutus-mission-textbox {
+    background-color: gold;
+    color: black;
+    padding: 4em;
+    width: 100%;
+    outline: 3px solid black;
+    outline-offset: -2em;
+}
+
+.aboutus-mission-textbox p {
+    color: black;
+}
+
+.aboutus-mission-textbox h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Alex Brush', sans-serif;
+    font-weight: 700;
+}
+
+@media (min-width: 40rem) {
+    .aboutus-vision-textbox {
+        width: 50%;
+        position: absolute;
+        display: block;
+        float: left;
+    }
+}
+
+@media (min-width: 40rem) {
+    .aboutus-mission-textbox {
+        width: 50%;
+        position: relative;
+        display: inline-block;
+        float: right;
+    }
+}
+
+/*our-map
+    ======================================================================
+*/
+
+.our-map {
+    border: solid gold 2px;
+    height: 15em;
+    width: 80%;
+}
+
+/*aboutus-location-textbox
+    ======================================================================
+*/
+
+.aboutus-location-textbox {
+    background-color: black;
+    color: gold;
+    padding: 4em;
+    width: 100%;
+    outline: 3px solid gold;
+    outline-offset: -2em;
+}
+
+.aboutus-location-textbox p {
+    color: gold;
+}
+
+.aboutus-location-textbox h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Alex Brush', sans-serif;
+    font-weight: 700;
+}
+
+
+@media (min-width: 42rem) {
+    .aboutus-location-textbox {
+        width: 50%;
+        position: absolute;
+        display: block;
+        float: left;
+        background-color: gold;
+        color: black;
+        outline: 3px solid black;
+        height: 32em;
+    }
+    .aboutus-location-textbox p {
+    color: black;
+    }
+    .our-map {
+        border: solid black 2px;
+        height: 15em;
+        width: 80%;
+    }
+}
+
+/*aboutus-contact-us-textbox
+    ======================================================================
+*/
+
+.aboutus-contact-us-textbox {
+    background-color: gold;
+    color: black;
+    padding: 4em;
+    width: 100%;
+    outline: 3px solid black;
+    outline-offset: -2em;
+    height: 41em;
+}
+
+.aboutus-contact-us-textbox p {
+    color: black;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.aboutus-contact-us-textbox h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Alex Brush', sans-serif;
+    font-weight: 700;
+}
+
+.button-call-us, .button-email-us {
+    background-color: gold;
+    color: black;
+    display: inline-block;
+}
+
+.button-email-us {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.button-call-us:hover, .button-email-us:hover {
+    background-color: black;
+    color: gold;
+    border-color: black;
+}
+
+    @media (min-width: 42rem) {
+        .aboutus-contact-us-textbox {
+            width: 50%;
+            position: relative;
+            display: inline-block;
+            float: right;
+            background-color: black;
+            color: gold;
+            outline: 3px solid gold;
+            height: 32em;
+        }
+
+        .aboutus-contact-us-textbox p {
+            color: gold;
+         }
+
+        .button-call-us {
+            background-color: black;
+            color: gold;
+        }
+
+        .button-email-us {
+            background-color: black;
+            color: gold;
+            padding-right: 0.5em;
+            padding-left: 0.5em;
+        }
+
+        .button-call-us:hover, .button-email-us:hover {
+            background-color: gold;
+            color: black;
+            border-color: black;
+        }
+
+    }
+
+

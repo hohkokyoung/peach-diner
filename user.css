@@ -1,0 +1,549 @@
+﻿@import url("https://fonts.googleapis.com/css?family=Dancing Script");
+@import url("https://fonts.googleapis.com/css?family=Capriola");
+@import url("https://fonts.googleapis.com/css?family=Aldrich");
+@import url("https://fonts.googleapis.com/css?family=Cutive Mono");
+@import url("https://fonts.googleapis.com/css?family=Bad Script");
+
+body {
+    padding: 0;
+    background-image: url(img/cuttingboard.png);
+    background-size: cover;
+}
+
+
+.user-hero {
+    padding: 12em 0;
+    height: 150vh;
+    color: white;
+}
+
+@media (min-width:55rem) {
+    .user-hero {
+        padding: 6em 0;
+        height: 30em;
+    }
+}
+
+.user-textbox h2 {
+    font-family: 'Bad Script', sans-serif;
+    font-size: 4em;
+    margin-bottom: .2em;
+    margin-top: .5em;
+}
+
+.user-textbox p {
+    font-size: 2em;
+    font-family: 'Bad Script', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.user-textbox h3 {
+    font-size: 2.5em;
+    font-family: 'Bad Script', sans-serif;
+    padding: 0;
+    margin-top: .2em;
+}
+
+.user-hero .user-button {
+    text-decoration: none;
+    margin: auto .5em;
+    color: gold;
+    border: 1px gold solid;
+    padding: .4em 1.5em;
+    background-color: black;
+    font-family: 'Cutive Mono', sans-serif;
+    font-size: 1.5em;
+    font-weight: 900;
+    display: inline-block;
+    border-radius: .2em;
+}
+
+.user-hero .user-settings:hover {
+    background-color: gold;
+    color: black;
+}
+
+.user-hero .user-history:hover {
+    background-color: gold;
+    color: black;
+}
+
+.user-hero .user-delete-account:hover {
+    background-color: gold;
+    color: black;
+}
+
+.user-hero .user-reserve:hover {
+    background-color: gold;
+    color: black;
+}
+
+.user-hero .user-log-out:hover {
+    background-color: gold;
+    color: black;
+}
+
+.modal-password {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 10em; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-password-textbox {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 3em;
+    border: 1px solid #888;
+    width: 80%;
+    padding-top: 4em;
+    padding-bottom: 2em;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    font-size: 2em;
+    font-weight: bold;
+    float: right;
+    margin-top: -.7em;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-button {
+    padding: .3em 2em;
+    margin: auto 2em;
+    font-family: 'Cutive Mono', sans-serif;
+    font-size: 1.2em;
+}
+
+.modal-cancel {
+    background-color: lightgrey;
+    color: black;
+    cursor: pointer;
+}
+
+.modal-proceed {
+    background-color: gold;
+    color: black;
+    cursor: pointer;
+    border: none;
+}
+
+.modal-cancel:hover {
+    box-shadow: 0 0 15px black;
+}
+
+.modal-proceed:hover {
+    box-shadow: 0 0 15px black;
+}
+
+.modal-password-textbox .modal-text {
+    font-size: 2em;
+    font-weight: 900;
+    font-family: 'Bad Script', sans-serif;
+    width: 100%;
+}
+
+.modal-password-textbox .modal-pass-input {
+    margin: 1.5em auto;
+    padding: .5em 2em;
+    text-align: center;
+    border: none;
+    border: 1px gold solid;
+    margin-bottom: 2em;
+}
+
+.modal-password-textbox .modal-pass-input:focus {
+    box-shadow: 0 4px 10px -2px gray;
+}
+
+.modal-password-textbox  .modal-pass-container {
+    width: 100%;
+}
+
+.modal-settings {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 6em; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-settings-textbox {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 4em;
+    border: 1px solid #888;
+    width: 60%;
+    padding-top: 2em;
+    padding-bottom: 6em;
+}
+
+.close2 {
+    color: #aaaaaa;
+    font-size: 2em;
+    font-weight: bold;
+    float: right;
+}
+
+.close2:hover,
+.close2:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-settings-textbox h4 {
+    font-size: 4em;
+    font-family: 'Bad Script', sans-serif;
+    margin: 0;
+    padding: 0;
+    padding: .5em;
+}
+
+.modal-settings-textbox .settings-title {
+    font-size: 1.5em;
+    font-weight: 900;
+    font-family: 'Bad Script', sans-serif;
+    display: unset;
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.modal-settings-textbox .settings-details {
+    font-size: 1.3em;
+    font-family: 'Bad Script', sans-serif;
+    display: block;
+}
+
+.modal-settings-textbox .settings-details-container {
+    width: 100%;
+}
+
+.modal-settings-textbox .settings-details .edit-icon {
+    right: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.modal-settings-textbox .settings-details .edit-icon:hover {
+    color: lightgrey;
+}
+
+.modal-settings-textbox .edit-icon {
+    right: 0;
+    left: 0;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.modal-settings-textbox .edit-icon:hover {
+    color: lightgrey;
+}
+
+.modal-settings-textbox .settings-details-data {
+    margin: auto 3em;
+    margin-left: 4em;
+}
+
+.modal-settings-textbox .settings-input {
+    font-size: 1.3em;
+    font-family: 'Bad Script', sans-serif;
+    border: none;
+    border-bottom: 1px solid black;
+    text-align: center;
+    width: 30%;
+    display: none;
+    margin-left: 4em;
+    margin-right: 1em;
+    outline: none;
+}
+
+.modal-settings-textbox .settings-input:focus {
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.modal-settings-textbox .settings-password {
+    display: none;
+}
+
+.modal-settings-textbox .settings-password .settings-password-title {
+    display: unset;
+    margin: 0;
+    display: inline-block;
+    width: 30%;
+}
+
+.modal-settings-textbox .settings-password .settings-password-details {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin: 0;
+}
+
+.modal-settings-textbox .fa-check {
+    font-size: 1.7em;
+    display: none;
+    cursor: pointer;
+}
+
+.modal-settings-textbox .fa-times {
+    font-size: 1.5em;
+    display: none;
+    cursor: pointer;
+    margin-left: .7em;
+}
+
+.modal-settings-textbox .fa-check:hover {
+    color: lightgrey;
+}
+
+.modal-settings-textbox .fa-times:hover {
+    color: lightgrey;
+}
+
+.modal-settings-textbox .settings-password .settings-password-icon {
+    margin: 1em 1em;
+}
+
+.modal-settings-textbox .settings-submit {
+    border: none;
+    background-color: transparent;
+    display: none;
+    z-index: 1;
+}
+
+.modal-history {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 6em; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-history-textbox {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 3em;
+    border: 1px solid #888;
+    width: 90%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.close7 {
+    color: #aaaaaa;
+    font-size: 2em;
+    font-weight: bold;
+    float: right;
+    width: 0;
+}
+
+.close7:hover,
+.close7:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-history-textbox tr {
+    font-family: 'Cutive Mono', sans-serif;
+    font-size: 1.3em;
+    border-radius: .5em;
+}
+
+.modal-history-textbox th {
+    padding-left: .5em;
+    padding-right: 1.1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.modal-history-textbox tr:hover {
+    box-shadow: 5px 5px 30px black;    
+}
+
+.modal-history-textbox .modal7-exit {
+    margin: auto auto;
+    margin-bottom: 0;
+    display: block;
+    margin-top: 2em;
+    width: 15%;
+    text-align: center;
+}
+
+.modal-history-textbox .cancel-booking-button {
+   border: 1px solid black;
+   display: block;
+   padding: .5em .8em;
+   margin-right: .2em;
+
+}
+
+.modal-history-textbox .cancel-booking-button:hover {
+    background-color: rgba(243, 35, 35, 1);
+}
+
+.modal-cancelbooking {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 8em; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-cancelbooking-textbox {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 3em;
+    border: 1px solid #888;
+    width: 60%;
+    padding-top: 4em;
+    padding-bottom: 2em;
+}
+
+/* The Close Button */
+.close12 {
+    color: #aaaaaa;
+    font-size: 2em;
+    font-weight: bold;
+    float: right;
+    margin-top: -.7em;
+}
+
+.close12:hover,
+.close12:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-no {
+    background-color: lightgrey;
+    color: black;
+    cursor: pointer;
+}
+
+.modal-yes {
+    background-color: gold;
+    color: black;
+    cursor: pointer;
+    border: none;
+}
+
+.modal-no:hover {
+    box-shadow: 0 0 15px black;
+}
+
+.modal-yes:hover {
+    box-shadow: 0 0 15px black;
+}
+
+.modal-cancelbooking-textbox h4 {
+    font-size: 1.8em;
+    font-weight: 900;
+    font-family: 'Bad Script', sans-serif;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-cancelbooking-textbox .modal-cancelbooking-input {
+    margin: 1.5em auto;
+    padding: .5em 2em;
+    text-align: center;
+    border: none;
+    border: 1px gold solid;
+    margin-bottom: 2em;
+}
+
+.modal-cancelbooking-textbox .modal-cancelbooking-input:focus {
+    box-shadow: 0 4px 10px -2px gray;
+}
+
+.modal-cancelbooking-textbox .modal-cancelbooking-container {
+    width: 100%;
+}
+
+
+.modal-history-textbox .records-refresh-submit {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    font-size: 1em;
+    width: 0%;
+    outline: none;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-left: .3em;
+}
+
+.modal-history-textbox .reservations-search {
+    border: none;
+    font-size: 1em;
+    width: 40%;
+    background-color: transparent;
+    outline: none;
+    text-align: center;
+    border-radius: 2em;
+    font-family: 'Bad Script', sans-serif;
+    font-size: 1.2em;
+    padding-left: 1em;
+    color: black;
+}
+
+.modal-history-textbox .reservations-search-submit {
+    border: none;
+    background-color: transparent;
+    font-size: 1em;
+    outline: none;
+}
+
+.modal-history-textbox .reservations-search-container {
+    background-color: gold;
+    margin: 0;
+    border-radius: 2em;
+    width: 23%;
+    margin: 0 auto;
+}
+
+.modal-history-textbox .reservations-search:focus {
+    width: 55%;
+}

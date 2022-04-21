@@ -1,0 +1,644 @@
+﻿@import url("https://fonts.googleapis.com/css?family=Dancing Script");
+@import url("https://fonts.googleapis.com/css?family=Capriola");
+@import url("https://fonts.googleapis.com/css?family=Cutive Mono");
+@import url("https://fonts.googleapis.com/css?family=Alex Brush");
+@import url("https://fonts.googleapis.com/css?family=Aldrich");
+@import url("https://fonts.googleapis.com/css?family=Bad Script");
+
+body {
+    padding: 0;
+    background-image: url(img/restaurant-reservation.png);
+    background-size: cover;
+}
+
+.reservations-hero {
+    padding: 7em 0;
+    height: 75em;
+    color: white;
+}
+
+.reservations-container {
+    position: relative;
+    width: 90%;
+    height: 20em;
+    margin: 6em auto;
+}
+
+.reservations-container .reservations-box {
+    position: relative;
+    width: 90%;
+    height: 15em;
+    background-color: white;
+    float: left;
+    margin: 1em;
+    margin-top: 5%;
+    overflow: hidden;
+    border-radius: 1em;
+    color: black
+}
+
+.reservations-container .reservations-box .reservations-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transition: .5s;
+    -webkit-transition: .5s;
+    z-index: 1;
+}
+
+.reservations-container .reservations-box:hover .reservations-icon {
+    top: 1em;
+    left: 40%;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+}
+
+.reservations-container .reservations-box .reservations-icon .fas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 3em;
+    transition: .5s;
+    -webkit-transition: .5s;
+    color: white;
+}
+
+.reservations-container .reservations-box:hover .reservations-icon .fas {
+    font-size: 2em;
+}
+
+.reservations-container .reservations-box .reservations-content {
+    position: relative;
+    top: 100%;
+    height: 5em;
+    text-align: center;
+    padding: .3em;
+    transition: .5s;
+    -webkit-transition: .5s;
+    font-size: 1em;
+    opacity: 0;
+}
+
+.reservations-container .reservations-box:hover .reservations-content {
+    top: 4em;
+    opacity: 1;
+}
+
+.reservations-container .reservations-box .reservations-content h2 {
+    font-size: 2.2em;
+    font-family: Cutive Mono, sans-serif;
+    font-weight: 600;
+}
+
+.reservations-container .reservations-box .reservations-content p {
+    font-size: 1.2em;
+}
+
+.reservations-container .reservations-box:nth-child(2) {
+    background: white;
+}
+
+.reservations-container .reservations-box:nth-child(2) .reservations-icon {
+    background: gold;
+}
+
+.reservations-container .reservations-box:nth-child(2) .reservations-icon .fas {
+    color: white;
+}
+
+.reservations-container .reservations-box:nth-child(2) .reservations-content {
+    color: gold;
+}
+
+.reservations-container .reservations-box:nth-child(3) {
+    background: black;
+}
+
+.reservations-container .reservations-box:nth-child(3) .reservations-icon {
+    background: white;
+}
+
+.reservations-container .reservations-box:nth-child(3) .reservations-icon .fas {
+    color: white;
+}
+
+.reservations-container .reservations-box:nth-child(3) .reservations-icon .fa-user {
+    color: black;
+}
+
+.reservations-container .reservations-box:nth-child(3) .reservations-content {
+    color: white;
+}
+
+.reservations-arrow .fas {
+    font-size: 3em;
+    color: white;
+}
+
+.reservations-arrow:hover .fa-arrow-down {
+    color: gold;
+    text-shadow: 0 0 10px white;
+}
+
+.reservations-container-textbox {
+    position: relative;
+    top: 23em;
+    left: 50%;
+    width: 80%;
+    height: 35em;
+    transform: translate(-50%, -50%);
+    background: black;
+    border-radius: 1em;
+    border: 2px solid gold;
+}
+
+.reservations-container-textbox .reservations-textbox {
+    border: 2px solid gold;
+    height: 30em;
+    width: 85%;
+    margin: 2em auto;
+    text-align: center;
+    border-radius: 2em;
+}
+
+.reservations-container-textbox .reservations-table {
+    border: 1px solid white;
+    background: black;
+    color: white;
+    padding: 1em;
+    margin-top: .8em;
+    width: 80%;
+    font-size: 1.1em;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+.reservations-container-textbox .reservations-date {
+    border: 1px solid white;
+    background: black;
+    color: white;
+    padding: 1em;
+    margin-top: .8em;
+    width: 80%;
+    font-size: 1.3em;
+    border-radius: 2em;
+    margin-bottom: .8em;
+    cursor: pointer;
+}
+
+.reservations-container-textbox .reservations-time {
+    border: 1px solid white;
+    background: black;
+    color: white;
+    padding: 1em;
+    width: 80%;
+    font-size: 1.1em;
+    border-radius: 2em;
+    cursor: pointer;
+    margin-bottom: 1em;
+}
+
+.reservations-container-textbox span {
+    font-size: 1.8em;
+    margin-left: 0em;
+    position: relative;
+}
+
+.reservations-container-textbox .reservations-button {
+    padding: .6em;
+    background: black;
+    border-radius: 2em;
+    color: gold;
+    font-size: 1.5em;
+    border: 2px solid gold;
+    width: 80%;
+    position: relative;
+    cursor: pointer;
+    margin: 1.2em 1em;
+    font-family: 'Cutive Mono', sans-serif;
+    font-weight: 900;
+}
+
+.reservations-container-textbox .reservations-button:hover {
+    box-shadow: 0 0 15px 3px gold;
+    background: white;
+    color: black;
+    border: none;
+
+}
+
+.reservations-container-textbox h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 3em;
+    margin-top: .2em;
+    font-family: 'Alex Brush', sans-serif;
+}
+
+.reservations-container-textbox .reservations-total {
+    padding: 0;
+    margin: 0;
+    width: 20%;
+    margin-left: .2em;
+    font-size: 1.2em;
+    color: gold;
+    font-family: 'Cutive Mono', sans-serif;
+}
+
+@media (min-width: 34rem) {
+    .reservations-container {
+        width: 80%;
+        height: 20em;
+        margin: 2em auto;
+    }
+    .reservations-container .reservations-box {
+    position: relative;
+    width: 100%;
+    height: 15em;
+    margin: 0em;
+    margin-top: 15%;
+    color: black;
+    margin-right: 10em;
+    margin-bottom: 1em;
+    }
+    .reservations-container .reservations-box .reservations-icon {
+    position: absolute;
+    }
+    .reservations-container .reservations-box:hover .reservations-icon {
+    left: 43%;
+    }
+    .reservations-container .reservations-box .reservations-icon .fas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    }
+    .reservations-container .reservations-box .reservations-content {
+    position: relative;
+    top: 100%;
+    height: 5em;
+    }
+    .reservations-arrow:hover .fa-arrow-down {
+    width: 100%;
+    position: relative;
+    }
+    .reservations-container-textbox {
+    position: absolute;
+    top: 95em;
+    left: 50%;
+    width: 80%;
+    height: 40em;
+    border: 2px solid gold;
+    }
+    .reservations-container-textbox .reservations-textbox {
+    height: 35em;
+    width: 90%;
+    margin: 2em auto;
+    border-radius: 2em;
+    }
+    .reservations-container-textbox h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 4em;
+    margin-top: .5em;
+    }
+    .reservations-container-textbox .reservations-table {
+    padding: 1em;
+    margin-top: .8em;
+    width: 80%;
+    border-radius: 2em;
+    }
+    .reservations-container-textbox .reservations-date {
+    margin-top: .8em;
+    width: 80%;
+    border-radius: 2em;
+    }
+    .reservations-container-textbox .reservations-time {
+    padding: 1em;
+    width: 80%;
+    border-radius: 2em;
+    cursor: pointer;
+    margin-bottom: 1em;
+    }
+    .reservations-container-textbox span {
+    position: relative;
+    margin-left: .2em;
+    }
+    .reservations-container-textbox .reservations-button {
+    padding: .6em;
+    border-radius: 2em;
+    width: 50%;
+    position: relative;
+    margin: 1.2em 4em;
+    }
+    .reservations-container-textbox .reservations-total {
+    width: 100%;
+    }
+}
+
+@media (min-width: 40rem) {
+    .reservations-container-textbox {
+    position: absolute;
+    top: 100em;
+    left: 50%;
+    width: 80%;
+    height: 35em;
+    border-radius: 1em;
+    }
+    .reservations-container-textbox .reservations-textbox {
+    height: 31em;
+    width: 90%;
+    margin: 2em auto;
+    border-radius: 2em;
+    }
+    .reservations-container-textbox span {
+    position: relative;
+    margin-left: .5em;
+    }
+    .reservations-container-textbox .reservations-time {
+    width: 40%;
+    }
+}
+
+@media (min-width: 50rem) {
+    .reservations-container-textbox {
+    position: absolute;
+    top: 110em;
+    left: 50%;
+    width: 80%;
+    height: 35em;
+    border-radius: 1em;
+    }
+    .reservations-container-textbox .reservations-textbox {
+    border: 2px solid gold;
+    height: 31em;
+    width: 90%;
+    margin: 2em auto;
+    border-radius: 2em;
+    }
+    .reservations-container .reservations-box:hover .reservations-icon {
+    top: 1em;
+    left: 46%;
+    width: 4em;
+    height: 4em;
+    }
+}
+
+@media (min-width: 80rem) {
+    .reservations-container {
+        position: relative;
+        width: 90%;
+        height: 20em;
+        margin: 2em auto;
+    }
+    .reservations-container .reservations-box {
+    position: relative;
+    width: 30.5%;
+    height: 15em;
+    margin: 1em;
+    margin-top: 5%;
+    border-radius: 1em;
+    }
+    .reservations-container .reservations-box .reservations-icon {
+    position: absolute;
+    }
+    .reservations-container .reservations-box:hover .reservations-icon {
+    top: 1em;
+    left: 40%;
+    }
+    .reservations-container .reservations-box .reservations-icon .fas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    }
+    .reservations-container .reservations-box .reservations-content {
+    position: absolute;
+    top: 100%;
+    height: 5em;
+    }
+    .reservations-arrow:hover .fa-arrow-down {
+    width: 100%;
+    position: relative;
+    }
+    .reservations-container-textbox {
+    position: absolute;
+    top: 55em;
+    left: 50%;
+    width: 80%;
+    height: 27em;
+    }
+    .reservations-container-textbox .reservations-textbox {
+    height: 23em;
+    width: 90%;
+    margin: 2em auto;
+    border-radius: 2em;
+    }
+    .reservations-container-textbox h2 {
+    font-size: 4em;
+    margin-top: .2em;
+    }
+    .reservations-container-textbox .reservations-table {
+    border: 1px solid white;
+    padding: 1em;
+    margin-top: .8em;
+    width: 40%;
+    border-radius: 1em;
+    }
+    .reservations-container-textbox .reservations-date {
+    border: 1px solid white;
+    padding: 1em;
+    margin-top: .8em;
+    width: 40%;
+    border-radius: 1em;
+    margin-left: 2em;
+    margin-bottom: 2em;
+    }
+    .reservations-container-textbox .reservations-time {
+    border: 1px solid white;
+    width: 30%;
+    border-radius: 1em;
+    margin-left: -5em;
+    margin-bottom: 0;
+    }
+    .reservations-container-textbox span {
+    margin-left: 1em;
+    position: relative;
+    }
+    .reservations-container-textbox .reservations-button {
+    border-radius: .5em;
+    width: 30%;
+    position: relative;
+    margin: 1.2em 8em;
+    }
+    .reservations-container-textbox .reservations-total {
+    width: 20%;
+    margin-left: .5em;
+    }
+}
+
+.reservations-container-textbox .reservations-table,
+.reservations-container-textbox .reservations-date,
+.reservations-container-textbox .reservations-time {
+     outline: none;
+}
+
+.modal-payment {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 1em; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-payment-textbox {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 3em;
+    border: 1px solid #888;
+    width: 45%;
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+
+.modal-payment-textbox h1 {
+    font-size: 2.5em;
+    font-family: 'Bad Script', sans-serif;
+    font-weight: 900;
+    margin: .5em auto;
+    margin-bottom: .2em;
+}
+
+/* The Close Button */
+.close5 {
+    color: #aaaaaa;
+    font-size: 2em;
+    font-weight: bold;
+    float: right;
+    margin-top: -.7em;
+}
+
+.close5:hover,
+.close5:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close6 {
+    color: #aaaaaa;
+    font-size: 2em;
+    font-weight: bold;
+    float: right;
+    margin-top: -.7em;
+}
+
+.close6:hover,
+.close6:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-button {
+    padding: .3em 2em;
+    margin: auto 2em;
+    font-family: 'Cutive Mono', sans-serif;
+    font-size: 1.2em;
+    margin-top: .3em;
+}
+
+.modal-cancel {
+    background-color: lightgrey;
+    color: black;
+    cursor: pointer;
+}
+
+.modal-cancel:hover {
+    box-shadow: 0 0 15px black;
+}
+
+.payment-method-icon i {
+    display: inline-block;
+    font-size: 1.6em;
+    padding: .5em;
+    color: black;
+    border-radius: 0em;
+    margin-bottom: .5em;
+}
+
+.payment-method-icon p {
+    font-size: .6em;
+    font-weight: 300;
+    font-family: 'Capriola', sans-serif;
+}
+
+.payment-method-icon i:hover {
+    background-color: lightgrey;
+}
+
+.payment-method-icon .fa-paypal:hover {
+    color: black;
+}
+
+.modal-payment-textbox .payment-password {
+    display: none;
+    margin: 1.5em auto;
+    padding: .5em 2em;
+    text-align: center;
+    border: none;
+    border: 1px gold solid;
+    margin-bottom: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.modal-payment-textbox .payment-password:focus {
+    box-shadow: 0 4px 10px -2px gray;
+}
+
+.modal-payment-textbox .payment-text {
+    font-family: 'Bad Script', sans-serif;
+    font-size: 1.3em;
+    font-weight: 900;
+}
+
+.modal-pay {
+    background-color: gold;
+    color: black;
+    cursor: pointer;
+    border: none;
+    display: none;
+}
+
+.modal-pay:hover {
+    box-shadow: 0 0 15px black;
+}
+
+.modal-payment-textbox .payment-method-icon table {
+    margin: 0 auto;
+    margin-bottom: 1em;
+    display: none;
+}
+
+.modal-payment-textbox .payment-method-icon td {
+    padding: .5em 1em;
+    padding-bottom: .3em;
+}
+
+.modal-payment-textbox .payment-method-icon img {
+    width: 50px;
+}
+
+.modal-payment-textbox .payment-method-icon td:hover {
+    background-color: lightgrey;
+}

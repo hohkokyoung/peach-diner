@@ -1,0 +1,480 @@
+﻿@import url("https://fonts.googleapis.com/css?family=Battambang");
+@import url("https://fonts.googleapis.com/css?family=Dancing Script");
+@import url("https://fonts.googleapis.com/css?family=Bad Script");
+@import url("https://fonts.googleapis.com/css?family=Cutive Mono");
+
+body {
+    background-image: url(img/breakfast-home.png);
+}
+
+.modal-breakfast {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 32vh;
+    background-color: transparent;
+}
+
+.modal-breakfast-textbox {
+    margin: 0 auto; 
+    text-align: center;
+    background-color: black;
+    color: gold;
+    left: 0;
+    right: 0;
+    height: auto;
+    padding-bottom: 10em;
+    border: 5px solid gold;
+    outline: 2px solid gold;
+    outline-offset: -3em;
+}
+
+.modal-breakfast-textbox h2 {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 5em;
+    border-bottom: 2px solid gold;
+    font-weight: 400;
+    margin: 0 auto;
+    width: 60%;
+    padding: .9em;
+    padding-bottom: .2em;
+}
+
+.modal-breakfast-textbox table {
+    margin: 0 auto;
+    text-align: left;
+    width: 80%;
+    padding: 1em;
+    margin: 2em auto;
+    font-family: 'Bad Script', sans-serif;
+    font-size: 1.3em;
+    margin-bottom: 0em;
+} 
+
+.modal-breakfast-textbox .price {
+    text-align: right;
+}
+
+.modal-breakfast-textbox table:hover {
+    box-shadow: 4px 4px 15px gold;
+}
+
+.modal-breakfast-textbox .fas {
+    font-size: 1.1em;
+    text-align: right;
+    margin-left: 1em;
+    cursor: pointer;
+    margin-right: 0;
+}
+
+.modal-breakfast-textbox .fas:hover {
+    text-shadow: 0 0 15px gold;
+}
+
+.modal-breakfast-textbox .fa-plus {
+    margin-left: 0;
+}
+
+.modal-breakfast-textbox h3 {
+    font-weight: 400;
+    margin: 1em auto;
+    width: 0%;
+    font-size: 2em;
+}
+
+.fa-trash-alt {
+    color: red;
+}
+
+.modal-breakfast-textbox .edit-cross,
+.modal-breakfast-textbox .edit-submit-tick {
+    display: none;
+    color: gold;
+    right: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.modal-breakfast-textbox .edit-submit-tick {
+    border: none;
+    background-color: transparent;
+    font-size: .9em;
+    margin: 0;
+    padding: 0;
+    width: 0%;
+    right: 0;
+    margin-right: 1em;
+}
+
+.modal-breakfast-textbox .edit-tick {
+    margin: 0;
+    padding: 0;
+    width: 0%;
+    right: 0;
+}
+
+.dish-input {
+    background-color: gold;
+    border: none;
+    border-radius: .2em;
+    font-size: .9em;
+    font-family: 'Bad Script', sans-serif;
+    outline: none;
+    text-align: center;
+    width: 10em;
+    height: 1.8em;
+    margin-right: 1em;
+}
+
+.dish-input:focus {
+    box-shadow: 0px 0px 15px gold;
+}
+
+.image-input {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 0;
+}
+
+.breakfast-input {
+    display: none;
+}
+
+.image-input + label {
+    background-color: lightgrey;
+    margin: 0;
+    text-align:center;
+    cursor: pointer;
+    border-radius: 10em;
+    padding: 1em;
+    width: 4.2em;
+    height: 4.2em;
+    border: 2px solid gold; 
+    padding-left: .4em;
+    padding-right: 1.4em;
+    color: black;
+    transition: 0s;
+}
+
+.image-input + label:hover {
+    background-color: grey;
+    color: white;
+}
+
+.price-input {
+    background-color: gold;
+    border: none;
+    border-radius: .2em;
+    font-size: .9em;
+    font-family: 'Bad Script', sans-serif;
+    outline: none;
+    text-align: center;
+    width: 5em;
+    height: 1.8em;
+}
+
+.price-input:focus {
+    box-shadow: 0px 0px 15px gold;
+}
+
+.dish-description-input {
+    background-color: gold;
+    border: none;
+    border-radius: .2em;
+    font-size: .9em;
+    font-family: 'Bad Script', sans-serif;
+    outline: none;
+    text-align: center;
+    width: 18em;
+    height: 1.8em;
+}
+
+.dish-description-input:focus {
+    box-shadow: 0px 0px 15px gold;
+}
+
+.breakfast-image {
+    width: 4.2em;
+    height: 4.2em;    
+    object-fit: cover;
+    border-radius: 10em;
+    padding: 0;
+    margin: 0;
+    transition: transform .5s;
+    border: 2px solid gold;
+}
+
+.breakfast-image:hover {
+    transform: scale(2);
+}
+
+.modal-button {
+    padding: .3em 2em;
+    margin: auto 2em;
+    font-family: 'Cutive Mono', sans-serif;
+    font-size: 1.2em;
+}
+
+.modal-cancelbooking {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 8em; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-cancelbooking-textbox {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 3em;
+    border: 1px solid #888;
+    width: 60%;
+    padding-top: 4em;
+    padding-bottom: 2em;
+}
+
+/* The Close Button */
+.close19 {
+    color: #aaaaaa;
+    font-size: 2em;
+    font-weight: bold;
+    float: right;
+    margin-top: -.7em;
+}
+
+.close19:hover,
+.close19:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-no {
+    background-color: lightgrey;
+    color: black;
+    cursor: pointer;
+}
+
+.modal-yes {
+    background-color: gold;
+    color: black;
+    cursor: pointer;
+    border: none;
+}
+
+.modal-no:hover {
+    box-shadow: 0 0 15px black;
+}
+
+.modal-yes:hover {
+    box-shadow: 0 0 15px black;
+}
+
+.modal-cancelbooking-textbox h4 {
+    font-size: 1.8em;
+    font-weight: 900;
+    font-family: 'Bad Script', sans-serif;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-cancelbooking-textbox .modal-cancelbooking-input {
+    margin: 1.5em auto;
+    padding: .5em 2em;
+    text-align: center;
+    border: none;
+    border: 1px gold solid;
+    margin-bottom: 2em;
+}
+
+.modal-cancelbooking-textbox .modal-cancelbooking-input:focus {
+    box-shadow: 0 4px 10px -2px gray;
+}
+
+.modal-cancelbooking-textbox .modal-cancelbooking-container {
+    width: 100%;
+}
+
+.modal-editbreakfast {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 8em; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-editbreakfast-textbox {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 3em;
+    border: 1px solid #888;
+    width: 60%;
+    padding-top: 4em;
+    padding-bottom: 2em;
+}
+
+.modal-dish {
+    background-color: gold;
+    border: none;
+    border-radius: .2em;
+    font-size: .9em;
+    font-family: 'Bad Script', sans-serif;
+    outline: none;
+    text-align: center;
+    width: 10em;
+    height: 1.8em;
+    margin-right: 1em;
+    width: 13em;
+    font-size: 1.1em;
+    font-family: 'Bad Script', sans-serif;
+}
+
+.modal-price {
+    background-color: gold;
+    border: none;
+    border-radius: .2em;
+    font-size: .9em;
+    font-family: 'Bad Script', sans-serif;
+    outline: none;
+    text-align: center;
+    width: 10em;
+    height: 1.8em;
+    margin-right: 1em;
+    width: 8em;
+    font-size: 1.1em;
+    font-family: 'Bad Script', sans-serif;
+}
+
+.modal-description {
+    background-color: gold;
+    border: none;
+    border-radius: .2em;
+    font-size: .9em;
+    font-family: 'Bad Script', sans-serif;
+    outline: none;
+    text-align: center;
+    width: 10em;
+    height: 1.8em;
+    margin-right: 1em;
+    width: 16.5em;
+    font-size: 1.1em;
+    font-family: 'Bad Script', sans-serif;
+}
+
+.modal-dish:focus,
+.modal-price:focus,
+.modal-description:focus {
+    box-shadow: 0 0 15px gold;
+}
+
+.modal-breakfast-description {
+    display: block;
+    margin-top: -7.5em;
+    font-family: 'Bad Script', sans-serif;
+    margin-left: 6em;
+    font-size: 1.3em;
+}
+
+.modal-breakfast-price {
+    display: block;
+    margin-top: -7.5em;
+    font-family: 'Bad Script', sans-serif;
+    margin-left: 6.5em;
+    font-size: 1.3em;
+}
+
+.modal-breakfast-dish {
+    display: block;
+    margin-top: -17.5em;
+    font-family: 'Bad Script', sans-serif;
+    margin-left: 6.5em;
+    font-size: 1.3em;
+}
+
+.modal-image {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 0;
+}
+
+.modal-image + label {
+    background-color: lightgrey;
+    margin: 0;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10em;
+    padding: 1.5em;
+    width: 4.2em;
+    height: 4.2em;
+    border: 2px solid gold;
+    padding-left: .4em;
+    padding-right: 3.4em;
+    color: black;
+    transition: 0s;
+    padding-left: 2.4em;
+    display: block;
+    padding-top: 2.2em;
+    padding-bottom: 3.5em;
+    margin-top: -7.5em;
+    margin-left: -3em;
+}
+
+.modal-image + label:hover {
+    background-color: grey;
+    color: white;
+}
+
+.edit-submit-tick {
+    border: none;
+    background-color: transparent;
+    font-size: 1.5em;
+    margin-right: 2em;
+    cursor: pointer;
+    transition: 0s;
+}
+
+.edit-cross {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.edit-submit-tick:hover {
+    text-shadow: 0 0 15px black;
+    transition: 0s;
+}
+
+.edit-cross:hover {
+    text-shadow: 0 0 15px black;
+    transition: 0s;
+}

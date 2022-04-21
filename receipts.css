@@ -1,0 +1,110 @@
+﻿@import url("https://fonts.googleapis.com/css?family=Dancing Script");
+@import url("https://fonts.googleapis.com/css?family=Capriola");
+@import url("https://fonts.googleapis.com/css?family=Cutive Mono");
+@import url("https://fonts.googleapis.com/css?family=Alex Brush");
+@import url("https://fonts.googleapis.com/css?family=Aldrich");
+@import url("https://fonts.googleapis.com/css?family=Bad Script");
+
+body {
+    padding: 0;
+    background-image: url(img/restaurant-receipt3.png);
+    background-size: cover;
+}
+
+.modal-receipt {
+    display: initial; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: .5em; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-receipt-textbox {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 3em;
+    border: 1px solid gold;
+    width: 45%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: black;
+    color:gold;
+}
+
+.modal-receipt-textbox th {
+    font-size: 4em;
+    font-family: 'Alex Brush', sans-serif;
+    border-bottom: 1px solid gold;
+}
+
+.modal-receipt-textbox td {
+    font-size: 1.2em;
+}
+
+.modal-receipt-textbox .receipt-thankyou {
+    padding: 1em;
+    font-family: 'Bad Script', sans-serif;
+    font-size: 1.5em;
+    font-weight: 900;
+    padding-bottom: .1em;
+}
+
+.modal-receipt-textbox .receipt-data {
+    text-align: left;
+    padding-left: 1em;
+    font-family: 'Bad Script', sans-serif;
+    font-weight: 900;
+}
+
+.modal-receipt-textbox .receipt-info {
+    font-size: 1.2em;
+    font-family: 'Bad Script', sans-serif;
+    font-weight: 900;
+    text-align: left;
+    text-decoration: underline;
+}
+
+.modal-receipt-textbox .receipt-time {
+    padding-bottom: .5em;
+}
+
+.modal-receipt-textbox .receipt-warning {
+    font-size: 1em;
+    padding: .2em;
+}
+
+.modal-receipt-textbox .receipt-refund {
+    border-top: 1px solid gold;
+    padding-top: .6em;
+}
+
+.modal-receipt-textbox .receipt-cancel {
+    padding-bottom: 1em;
+}
+
+.modal-receipt-textbox .modal-okay {
+    background-color: black;
+    color: gold;
+    border: 1px gold solid;
+}
+
+.modal-receipt-textbox .modal-okay:hover {
+    background-color: gold;
+    color: black;
+    box-shadow: 0 0 15px gold;
+}
+
+.modal-button {
+    padding: .3em 2em;
+    margin: auto 2em;
+    font-family: 'Cutive Mono', sans-serif;
+    font-size: 1.2em;
+    margin-top: .3em;
+    text-decoration: none;
+}
